@@ -1,0 +1,602 @@
+<! doctype html>
+<html>
+<head>
+<style>
+@charset "utf-8";
+/*CSS Document*/
+body{
+    background-color: #f6f5f5;
+    margin:0px;
+    padding:0px;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    widows: 100%;
+    height:95vh;
+    background-image:url("https://img.freepik.com/free-vector/gray-white-gradient-abstract-background_53876-60238.jpg?size=338&ext=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    padding:0px 5%;
+}
+nav ul{
+    display: flex;
+}
+nav ul a{
+    margin:30px;
+    font-family:Gill Sans;
+    color: #505050;
+    font-size:15px;
+    font-weight:700;
+}
+.logo{
+    font-family:'Times New Roman', Times, serif;
+    color: #000000;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.active{
+    font-weight: bold;
+    color:#2d2a2a;
+}
+.text-container p:nth-child(1){
+    font-family: Calibri;
+    font-weight:bold;
+    color:#6d6d6d;
+    font-size: 30px;
+}
+.text-container p:nth-child(2){
+    font-family:calibri;
+    font-weight:bold;
+    letter-spacing: 1px;
+    color:#1a1a1a;
+    font-size:60px;
+}
+.text-container p:nth-child(3){
+    font-family:myraid pro regular;
+    color:#403e3e;
+    font-size:30px;
+    line-height:30px;
+}
+.text-container{
+    line-height:0px;
+    margin:45px 0px 25px;
+
+}
+.text-container{
+    position:absolute;
+    left:13%;
+    top:42%;
+    transform:translate(-13%,-42%);
+}
+.text-container button{
+    width:130px;
+    height:42px;
+    border-radius:10px;
+    font-family:calibri;
+    font-weight:bold;
+    font-size:14px;
+    outline: none;
+    margin: 0px 10px;
+}
+.hire-btn{
+    border:2px solid #373636;
+    color:#373636;
+}
+.down-cv{
+    background-color: #0b0b0b;
+    color:#ffffff;
+    border: none;
+}
+button:active{
+    transform: scale(1.1);
+}
+.model{
+    height: 560px;
+    position:absolute;
+    bottom:0px;
+    left:80%;
+    transform: translate(-70%);
+}
+.about-container{
+    width:80%;
+    height:330px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display:flex;
+    margin:-7% auto 20px auto;
+    position:relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-container img{
+    height:250px;
+}
+.about-text{
+    width:550px;
+}
+.about-text p:nth-child(1){
+    color:#403e3e;
+    font-family:myriad pro;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 0px;
+}
+.about-text p:nth-child(2){
+    color:#3e3d3d;
+    font-size: 23px;
+    font-family: myriad pro;
+    font-weight: bold;
+    line-height:5px;
+}
+.about-text p:nth-child(3),
+.about-text p:nth-child(4){
+    color:#7e7d7d;
+    font-family:calibri;
+    font-size:16px;
+}
+.about-text button{
+    width:120px;
+    height:40px;
+    color: #ffffff;
+    outline:none;
+    border:none;
+    font-family:calibri;
+    background-color: #262525;
+}
+.services{
+    height: 600px;
+    background-color: #ffffff;
+    padding: 2% 10% 0 10%;
+}
+.services-text p:nth-child(1){
+    font-family: calibri;
+    font-weight: bolder;
+    color:#3e3d3d;
+    font-size:35px;
+    line-height: 0px;
+}
+.services-text p:nth-child(2){
+    font-family:calibri;
+    font-weight: bold;
+    color: #3e3d3d;
+    font-size: 20px;
+    line-height: 5px;
+}
+.services-text p:nth-child(3){
+    font-family: calibri;
+    color:#7e7d7d
+}
+.services-text{
+    width:500px;
+    margin: 50px 0px;
+}
+.box-1,.box-2,.box-3{
+    width:300px;
+    height:320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-container{
+    display: flex;
+    justify-content: space-between;
+}
+.box-1,.box-2,.box-3{
+    background-image: url(https://img.freepik.com/free-vector/black-dark-3d-low-poly-geometric-background_79145-393.jpg?size=626&ext=jpg);
+}
+.box-1 span,.box-2 span,.box-3 span{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+    font-weight: bold;
+}
+.box-1 p:nth-child(2),
+.box-2 p:nth-child(2),
+.box-3 p:nth-child(2){
+    color: #ffffff;
+    font-size: 23px;
+    line-height: 0px;
+}
+.box-1 p:nth-child(3),
+.box-2 p:nth-child(3),
+.box-3 p:nth-child(3){
+    font-family: calibri;
+    text-align: center;
+    width: 230px;
+    margin: 0px 0px 20px 0px;
+    color: #8f8f8f;
+}
+.box-1 button,.box-2 button,.box-3 button{
+    width: 100px;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.contact-me{
+    width:100%;
+    height:280px;
+    background-image: url(https://images.pexels.com/videos/3045163/free-video-3045163.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me p{
+    color:#ffffff;
+    font-size: 30px;
+    font-family: calibri;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+}
+.contact-me button{
+    width: 200px;
+    height: 40px;
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+footer{
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-family: calibri;
+}
+footer p:nth-child(1){
+    font-size:30px;
+    font-weight: bold;
+    color:#191919;
+    line-height: 10px;
+}
+footer p:nth-child(2){
+    font-size: 16px;
+    color:#7e7d7d;
+    width:600px;
+    text-align: center;
+}
+.social-icons a{
+    width:40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    margin:20px 10px;
+    border-radius: 50%;
+}
+.social-icons{
+    display: flex;
+}
+.copyright{
+    color: black;
+    font-size:15px;
+}
+.social-icons i{
+    color:#000000;
+
+}
+.social-icons a:hover{
+    background-color: #000000;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    transition: all ease 0.5s;
+}
+.social-icons a:hover i{
+    color:black;
+    transition: all ease 0.5s;
+}
+.nam{
+font-family:'Yusel Magic', 'Lucida Sans';
+background-color: Black;
+height:80px;
+width: 100%;
+position: absolute;
+top: 0.1px;
+}
+.namimg{
+height:80px;
+width: 20%;
+position:absolute;
+float:left;
+display: inline-block;
+}
+
+.namul{
+text-align:center;
+margin-right: 20px;
+}
+.namulli{
+display: inline-block;
+padding: 0 20px;
+line-height: 80px;
+color: aliceblue;
+font-size:30px;}
+.namullia{color:aliceblue;
+text-transform:uppercase;}
+footer ul {
+            display: inline-block;
+            background-color: transparent;
+            padding: 0; 
+            overflow: hidden;
+            list-style-type: none;
+            margin: 0;
+            }
+            footer ul li{
+                float: right;
+            }
+              footer ul li a{
+                  display: block;
+                  color: black;
+                  text-align: center;
+                  padding: 14px 14px;
+                  background-color: transparent;
+              }
+              footer ul li a:hover{
+                  background-color: aliceblue;
+              }
+
+</style>
+<meta charset="utf-8">
+<title>Scholarships</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!------------------------using font awesome-->
+<link rel="stylesheet" href="css fonts/all.min.css">
+</head>
+<body>
+<header>
+<nav class="nam">
+<label class="logo">
+<img src="20210313_121015_0000.png" class="namimg">
+</label>
+<ul class="namul">
+<li class="namulli><a href="index.html" class="namullia>home</a></li>
+<li class="namulli"><a href="mental.html"class="namullia">mental health</a></li>
+<li class="namulli"><a href="contact.html"class="namullia">contact us</a></li>
+<li class="namulli"><a href="motherhood.html"class="namullia">mother's corner</li>
+<li class="namulli"><a href="scholarships.html" class="namullia">scholarships</a></li>
+</ul>
+</nav>
+</header>
+    <section>
+        <!----------------------navigation-->
+        <nav>
+            <h1>Scholarships</h1>
+        </nav>
+        <div class="text">
+            <p class="title">Scholarships Schemes</p>
+            <div class="text-container-1">
+                <h1>CBSE Single Girl Child Scheme</h1>
+                <p>Eligibility:</p>
+                <ol>
+                    <li>Applicants should have passed Class 10th with a minimum 
+                        aggregate of 60% marks or should have a CGPA of 6.2
+                    </li>
+                    <li>They should have taken admission in the Class 11th
+                         of a CBSE recognized schools which tuition-fee should not be more than ?1,500.
+                    </li>
+                </ol>
+                <p>Amount of Scheme</p>
+                <p>Selected beneficiaries are given ? 500 on the monthly basis for 2 years. 
+                    The enhancement in the school tuition should not be more than 10%.
+                </p>
+                <p>How to apply?</p>
+                <p>Students can apply online for the scholarships scheme. They should enter their Roll Number and Certificate Number on the online application.
+                     All documents that are required should be attached to the application form
+                </p>
+            </div>
+            <div class="text-container-2">
+                <h1>Begum Hazrat Mahal Scholarship Scheme</h1>
+                <p>Eligibility:</p>
+                <ol>
+                    <li>The scholarship is given for Class 9th to Class 12 students
+                    </li>
+                    <li>They should have a minimum score of 50% marks in the previous class exams
+                    </li>
+                    <li>The annual family income of the applicant should not exceed ? 2,00,000 per annum.</li>
+                    <li>Applicants should be girl students belonging to any of the 6 minority
+                         communities, namely � Christian, Sikh, Muslim, Parsis, Jains, and Buddhists
+                    </li>
+                </ol>
+                <p>Amount of Scheme</p>
+                <ol>
+                    <li>For Class 9th and 10th � 
+                        Tuition fee benefits up to ? 10,000. It can be availed in 2 instalments of ? 5,000
+                    </li>
+                    <li>For Class 11th and 12th � Tuition fee up to ? 12,000. It can be availed in 2 instalments of ? 6,000.</li>
+                </ol>
+                <p>How to apply?</p>
+                <ol>
+                    <li>Through the Maulana Azad Education Foundation Scholarship portal i.e www.maef.nic.in. Applicants should
+                         fill the online application form and take its print copy. It should be sent to the MAEF office
+                    </li>
+                    <li>Applications are invited in October/ November</li>
+                </ol>
+            </div>
+            <div class="text-container-3">
+                <h1>CBSE Udaan</h1>
+                <p>Eligibility:</p>
+                <ol>
+                    <li>Kendriya Vidyalaya/ Navodaya Vidyalaya/any government run school affiliated to any Central/ State board.</li>
+                    <li>She should be studying in Class 11th in PCM stream.</li>l
+                    <li>She should have an aggregate score of minimum 70% marks in the Class 10th and not less than 80% marks in the Science and Mathematics subjects.</li>
+                    <li>On the CGPA scale, she should have an overall score of 8 and 9 in the Science and Mathematics subjects.</li>
+                    <li>Preference will be given to girl students belonging to the economically weaker section whose annual family income is not more than ? 6,00,000 per annum.</li>
+
+                </ol>
+                <p>Amount of Scheme</p>
+                <ol>
+                    <li>This is a fully�funded scholarship scheme</li>
+                    <li>Under this scholarship, girl students are given admission fee, tuition-fee, and cost of study materials, tablets or other miscellaneous expenses to attend the coaching classes and lectures</li>
+                    <li>The scholarship benefit is extended for only those girl students who attend at least 75% Udaan classes</li>
+                </ol>
+                <p>How to apply?</p>
+                <p>Interested girl students can apply for the CBSE Udaan Scholarship through
+                     the CBSE website:- http://cbseacademic.nic.in/
+                </p>
+            </div>
+            <div class="text-container-4">
+                <h1>AICTE Pragati Scholarship Scheme</h1>
+                <p>Eligibility:</p>
+                <ol>
+                    <li>An applicant should have taken admission in the 
+                        1 year of the degree or diploma course in the AICTE approved colleges/ institutions
+                    </li>
+                    <li>It can be availed by 2 girls per family
+                    </li>
+                    <li>The annual family income should not be more than ? 8,00,000 per annum</li>
+                    <li>The reservation principle is applicable. It means for OBC � 27%; for SC - 15% and ST � 7.5% seats are reserved</li>
+                </ol>
+                <p>Amount of Scheme</p>
+                <ol>
+                    <li>Tuition fee up to ? 30,000 is paid.</li>
+                    <li>A living monthly stipend of ? 2,000 is paid for 10 months</li>
+                    <li>Total Number of the scholarship is - 4000</li>
+                </ol>
+
+                <p>How to apply?</p>
+                <ol>
+                    <li>Through the MHRD official website</li>
+                    <li>Applications are invited in October/ November</li>
+                </ol>
+            </div>
+            <div class="text-container-5">
+                <h1>Kiran Girls Scheme Scholarship</h1>
+                <p>Eligibility:</p>
+                <ol>
+                    <li>Applicant should have qualified Class 10th with minimum
+                         60% marks and should have taken admission in the B. E/ B. Tech course
+                    </li>
+                    <li>Applicant�s annual family income should not be more than ? 3,50,000
+                    </li>
+                    <li>Girl students who are pursuing B.E/ B. Tech in IT and 
+                        Computer Science, or ENTC from the engineering colleges in Pune, Nagpur, Goa or Hyderabad
+                    </li>
+                </ol>
+                <p>Amount of Scheme</p>
+                <ul>
+                    <li>Those students who are selected for this scholarship get ? 40,000 on the annual basis.</li>
+                    <li>It can be availed till the completion of the engineering course.
+                    </li>
+                    <li>The total number of the scholarship is 10</li>
+                </ul>
+                <p>How to apply?</p>
+                <ul>
+                    <li>Interested candidates should visit the www.persistentfoundation.org to apply for the scholarship. They should fill-in the 
+                        online application form before the last date of the application submission which is usually 31st January
+                    </li>
+                    <li>Online screening test comprising of aptitude and English language proficiency is conducted in the month of February</li>
+                    <li>The shortlisted applicants are called for the 1 level of interview. Out of which top 20 candidates are shortlisted for the final interview.
+                         In the final interview, best 10 candidates are selected for the scholarship
+                    </li>
+                </ul>
+            </div>
+            <div class="text-container-6">
+                <h1>Google Anita Borg Scheme</h1>
+                <p>Eligibility:</p>
+                <ol>
+                    <li>The applicant should be a female student
+                    </li>
+                    <li>Applicant should be enrolled in the computer science or computing 
+                        engineering or any closely related undergraduate programme in the USA University
+                    </li>
+                    <li>This scholarship has been renamed as the Google Women Tech-makers program. Under this scholarship 
+                        programme, women candidates are encouraged to participate in computer science and computing programme
+                    </li>
+                </ol>
+                <p>Amount of Scheme</p>
+                <ul>
+                    <li>Each beneficiary get around $10,000 to pursue their studies further</li>
+                    <li>They also receive an invitation to attend the Google Annual Retreat programme held in the Mountain View, California.</li>
+                </ul>
+                <p>How to apply?</p>
+                <p>Interested students can apply online through the anitaborgscholars@google.com
+                </p>
+            </div>
+            <div class="text-container-7">
+                <h1>Adobe India Women in Technology Scholarship</h1>
+                <p>Eligibility:</p>
+                <ol>
+                    <li>The applicant should be female candidates
+                    </li>
+                    <li>She should be enrolled at any Indian University in the B. Tech or M. Tech integrated programme.
+                    </li>
+                </ol>
+                <p>Amount of Scheme</p>
+                <ul>
+                    <li>Tuition fee for the B. Tech/ integrated M. Tech course</li>
+                    <li>Opportunity to attend the Grace Hopper conference in India with the entry fee</li>
+                    <li>Those candidates who are selected for this scholarship get an opportunity to receive training at the Adobe India</li>
+                    <li>They also get chance for collaboration and mentoring at the BTP (Bachelor of Technology Project).</li>
+                </ul>
+                <p>How to apply?</p>
+                <ul>
+                    <li>Interested students can apply 
+                        through the Adobe website � https://research.adobe.com/adobe-india-women-in-technology-scholarship/
+                    </li>
+                    <li>�	They should submit complete Application - Form along with their detailed Resume and (SOP) Statement of the Purpose</li>
+                </ul>
+            </div>
+            <div class="text-container-8">
+                <h1>TATA Housing Scholarship for Meterorious Girls</h1>
+                <p>Eligibility:</p>
+                <ol>
+                    <li>The applicant should be a girl student
+                    </li>
+                    <li>She should be enrolled in the second year of the Civil Engineering/ Architecture or Construction 
+                        Management courses and should have an aggregate score of 50% marks in the 1st year exam.
+                    </li>
+                    <li>Those candidates enrolled for the 2 years
+                         full-time MBA programme should have a minimum score of 50% marks in the graduating years</li>
+                </ol>
+                <p>Amount of Scheme</p>
+                <ul>
+                    <li>The selected students under this scholarship programme get reimbursement of ? 60,000 annually 
+                        to pay for their tuition-fee or admission charges
+                    </li>
+                    <li>The scholarship benefit is given for the complete duration of the course</li>
+                    <li>Student should score at least 60% marks every year to continue to avail the scholarship benefit</li>
+                </ul>
+                <p>How to apply?</p>
+                <ul>
+                    <li>Interested students can apply through the Tata Housing scholarship
+                         scheme website by clicking on sustainability@tatahousing.com
+                    </li>
+                    <li>Applications are invited in November/ December</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+</body>
